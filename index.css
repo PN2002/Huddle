@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    background: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg), hsl(257, 40%, 49%);
+}
+
+body .container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 2%;
+}
+
+body .container header{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    justify-content: flex-start;
+}
+
+body .container main{
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+body .container main #left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+}
+
+body .container main #left img{
+    width: 80%
+}
+
+body .container main #right{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    width: 50%;
+    height: 100%;
+}
+
+body .contain main #right .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .container main #right .content h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+body .container main #right .content p{
+    margin: 1.3rem 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+body .container main #right .content button{
+    margin-top: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    padding: 0.6rem 0;
+    border-radius: 35px;
+    font-size: 0.9rem;
+    box-shadow: 7px 9px 20px -2px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 7px 9px 20px -2px rgba(0,0,0,0.41);
+    -moz-box-shadow: 7px 9px 20px -2px rgba(0,0,0,0.41); 
+    -o-box-shadow: 7px 9px 20px -2px rgba(0,0,0,0.41);
+    transition: all 0.1s ease-in;
+}
+
+body .container main #right .content button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
+}
+
+body .container footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+body .container footer ul{
+    display: flex;
+    gap: 0.7rem;
+    margin-right: 1rem;
+}
+
+body .container footer ul li{
+    font-size: 1.3rem;
+    color: whitesmoke;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+body .container footer ul li:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+
+/* Phone view */
+
+@media screen and (max-width:500px){
+    body{
+        background: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg),hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+
+    body .container{
+        width: 100%;
+        height: 100%;
+    }
+
+    body .container header{
+        padding: 2.5rem 0rem;
+    }
+
+    body .container header img{
+        width: 170px;
+    }
+
+    body .container main{
+        flex-direction: column;
+    }
+
+    body .container main #left{
+        width: 100%;
+        height: 100%;
+    }
+
+    body .container main #left img{
+        width: 90%
+    }
+
+    body .container main #right{
+        margin-top: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    body .container main #right .content h1{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    body .container main #right .content p{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    body .container main #right .content button{
+        width: 40%;
+        position: relative;
+        left: 30%;
+    }
+
+    body .container footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
